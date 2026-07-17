@@ -1,0 +1,203 @@
+/*
+ * REWIRE Design System — Colors & Typography
+ * Efectividad Organizacional
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&family=Mulish:wght@400;500;600;700&display=swap');
+
+/* ─────────────────────────────────────────────
+   COLOR TOKENS
+───────────────────────────────────────────── */
+
+:root {
+  /* Brand Primaries */
+  --rw-navy:          #163765;
+  --rw-navy-dark:     #093C71;
+  --rw-orange:        #E8852A;
+  --rw-orange-dark:   #C96E1A;
+  --rw-orange-light:  #F5A55A;
+
+  /* Neutrals */
+  --rw-black:         #181818;
+  --rw-gray-900:      #222222;
+  --rw-gray-700:      #4A4A4A;
+  --rw-gray-500:      #7A7A7A;
+  --rw-gray-300:      #C4C4C4;
+  --rw-gray-100:      #F2F2F2;
+  --rw-white:         #FFFFFF;
+
+  /* Semantic — Foreground */
+  --rw-fg-primary:    var(--rw-black);
+  --rw-fg-secondary:  var(--rw-gray-700);
+  --rw-fg-muted:      var(--rw-gray-500);
+  --rw-fg-inverse:    var(--rw-white);
+  --rw-fg-accent:     var(--rw-orange);
+  --rw-fg-brand:      var(--rw-navy);
+
+  /* Semantic — Background */
+  --rw-bg-default:    var(--rw-white);
+  --rw-bg-subtle:     var(--rw-gray-100);
+  --rw-bg-dark:       var(--rw-navy-dark);
+  --rw-bg-navy:       var(--rw-navy);
+  --rw-bg-accent:     var(--rw-orange);
+
+  /* Semantic — Border */
+  --rw-border:        var(--rw-gray-300);
+  --rw-border-strong: var(--rw-gray-700);
+  --rw-border-accent: var(--rw-orange);
+  --rw-border-brand:  var(--rw-navy);
+
+  /* Interactive */
+  --rw-interactive-primary:       var(--rw-orange);
+  --rw-interactive-primary-hover: var(--rw-orange-dark);
+  --rw-interactive-secondary:     var(--rw-navy);
+  --rw-interactive-secondary-hover: var(--rw-navy-dark);
+
+  /* ─────────────────────────────────────────
+     TYPOGRAPHY TOKENS
+  ───────────────────────────────────────── */
+
+  --rw-font-display:  'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --rw-font-body:     'Open Sans', Arial, sans-serif;
+  --rw-font-ui:       'Mulish', 'Open Sans', Arial, sans-serif;
+
+  /* Type Scale */
+  --rw-text-xs:    0.75rem;   /* 12px */
+  --rw-text-sm:    0.875rem;  /* 14px */
+  --rw-text-base:  1rem;      /* 16px */
+  --rw-text-lg:    1.125rem;  /* 18px */
+  --rw-text-xl:    1.25rem;   /* 20px */
+  --rw-text-2xl:   1.5rem;    /* 24px */
+  --rw-text-3xl:   1.875rem;  /* 30px */
+  --rw-text-4xl:   2.25rem;   /* 36px */
+  --rw-text-5xl:   3rem;      /* 48px */
+  --rw-text-6xl:   3.75rem;   /* 60px */
+  --rw-text-7xl:   4.5rem;    /* 72px */
+
+  /* Line Height */
+  --rw-leading-tight:  1.2;
+  --rw-leading-snug:   1.35;
+  --rw-leading-normal: 1.5;
+  --rw-leading-relaxed:1.65;
+
+  /* Letter Spacing */
+  --rw-tracking-tight:  -0.02em;
+  --rw-tracking-normal:  0em;
+  --rw-tracking-wide:    0.05em;
+  --rw-tracking-widest:  0.18em;
+
+  /* Font Weights */
+  --rw-weight-regular: 400;
+  --rw-weight-medium:  500;
+  --rw-weight-semibold:600;
+  --rw-weight-bold:    700;
+  --rw-weight-extrabold:800;
+
+  /* ─────────────────────────────────────────
+     SPACING TOKENS
+  ───────────────────────────────────────── */
+
+  --rw-space-1:   4px;
+  --rw-space-2:   8px;
+  --rw-space-3:   12px;
+  --rw-space-4:   16px;
+  --rw-space-5:   20px;
+  --rw-space-6:   24px;
+  --rw-space-8:   32px;
+  --rw-space-10:  40px;
+  --rw-space-12:  48px;
+  --rw-space-16:  64px;
+  --rw-space-20:  80px;
+  --rw-space-24:  96px;
+
+  /* ─────────────────────────────────────────
+     RADII & SHADOWS
+  ───────────────────────────────────────── */
+
+  --rw-radius-sm:  4px;
+  --rw-radius-md:  6px;
+  --rw-radius-lg:  8px;
+  --rw-radius-xl:  12px;
+  --rw-radius-full:9999px;
+
+  --rw-shadow-sm:  0 1px 3px rgba(22, 55, 101, 0.10);
+  --rw-shadow-md:  0 4px 12px rgba(22, 55, 101, 0.12);
+  --rw-shadow-lg:  0 8px 24px rgba(22, 55, 101, 0.15);
+}
+
+/* ─────────────────────────────────────────────
+   SEMANTIC ELEMENT STYLES
+───────────────────────────────────────────── */
+
+h1, .rw-h1 {
+  font-family: var(--rw-font-display);
+  font-size: var(--rw-text-5xl);
+  font-weight: var(--rw-weight-bold);
+  line-height: var(--rw-leading-tight);
+  letter-spacing: var(--rw-tracking-tight);
+  color: var(--rw-fg-brand);
+}
+
+h2, .rw-h2 {
+  font-family: var(--rw-font-display);
+  font-size: var(--rw-text-4xl);
+  font-weight: var(--rw-weight-bold);
+  line-height: var(--rw-leading-tight);
+  color: var(--rw-fg-brand);
+}
+
+h3, .rw-h3 {
+  font-family: var(--rw-font-display);
+  font-size: var(--rw-text-2xl);
+  font-weight: var(--rw-weight-semibold);
+  line-height: var(--rw-leading-snug);
+  color: var(--rw-fg-brand);
+}
+
+h4, .rw-h4 {
+  font-family: var(--rw-font-display);
+  font-size: var(--rw-text-xl);
+  font-weight: var(--rw-weight-semibold);
+  color: var(--rw-fg-primary);
+}
+
+p, .rw-body {
+  font-family: var(--rw-font-body);
+  font-size: var(--rw-text-base);
+  font-weight: var(--rw-weight-regular);
+  line-height: var(--rw-leading-relaxed);
+  color: var(--rw-fg-primary);
+}
+
+.rw-label {
+  font-family: var(--rw-font-ui);
+  font-size: var(--rw-text-sm);
+  font-weight: var(--rw-weight-semibold);
+  letter-spacing: var(--rw-tracking-wide);
+  text-transform: uppercase;
+  color: var(--rw-fg-secondary);
+}
+
+.rw-caption {
+  font-family: var(--rw-font-ui);
+  font-size: var(--rw-text-xs);
+  color: var(--rw-fg-muted);
+}
+
+.rw-hero-title {
+  font-family: var(--rw-font-display);
+  font-size: var(--rw-text-7xl);
+  font-weight: var(--rw-weight-extrabold);
+  line-height: var(--rw-leading-tight);
+  letter-spacing: var(--rw-tracking-tight);
+  color: var(--rw-fg-accent);
+}
+
+.rw-section-label {
+  font-family: var(--rw-font-ui);
+  font-size: var(--rw-text-sm);
+  font-weight: var(--rw-weight-bold);
+  letter-spacing: var(--rw-tracking-widest);
+  text-transform: uppercase;
+  color: var(--rw-orange);
+}
